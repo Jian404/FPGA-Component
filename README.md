@@ -1,2 +1,0 @@
-# FPGA-Component
-# FPGA-Component

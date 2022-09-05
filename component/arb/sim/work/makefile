@@ -12,7 +12,7 @@ comp_vcs:
 	-debug_all \
 	-l ./comp_log/comp.log \
 	${ALL_DEFINE} \
-	-f {filelist}
+	-f ${filelist}
 
 run_vcs:
 	./testbench.sv \
@@ -22,7 +22,7 @@ run_verdi:
 	verdi \
 	-sv \
 	${ALL_DEFINE} \
-	-f {filelist} \
+	-f ${filelist} \
 	-ssf ./tst.fsdb
 
 all:

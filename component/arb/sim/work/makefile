@@ -10,13 +10,13 @@ comp_vcs:
 	+v2k \
 	-sverilog \
 	-debug_all \
-	-l ./comp_log/comp.log \
+	-l ./comp.log \
 	${ALL_DEFINE} \
 	-f ${filelist}
 
 run_vcs:
 	./testbench.sv \
-	-l ./sim_log/sim.log 
+	-l ./sim.log 
 
 run_verdi:
 	verdi \

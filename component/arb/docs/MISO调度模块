@@ -1,0 +1,26 @@
+MISO调度模块
+1、简介
+    MISO调度模块是多输入单输出(multiple-input, single-output)的数据包调度模块，该调度模块支持错误检测，轮询调度，优先级调度，高可配置。
+
+2、功能
+    1）高可配置
+    2）支持错误丢包，包含SOP、EOP错误丢包、ERROR丢包、长短包丢包
+
+3、可配置参数
+    1）CHANNEL_NUM：通道数量，范围2-8
+    2）DATA_WIDTH：数据位宽，范围8-512
+    3）ADDR_WIDTH：单通道报文缓存RAM地位位宽
+    4）MIN_LEN：可接收的数据包有效valid最短时钟周期
+    5）MAX_LEN：可接收的数据包有效valid最长时钟周期
+    6）OUTPUT_INT：输出数据包间隔的时钟周期
+    7）SEOP_CHECK：SOP、EOP错误丢包使能，选项:"ON" "OFF"
+    8）ERROR_CHECK：ERROR错误丢包使能，选项:"ON" "OFF"
+    9）RAM_TYPE：单通道RAM的类型，选项:"BRAM" "DRAM"
+
+4、架构
+    1）top
+        调度的顶层
+    2）channel_buffer
+        单通道的数据包缓存，由数据FIFO和长度FIFO组成
+    3）ctrl
+        调度控制，可支持多种调度方式

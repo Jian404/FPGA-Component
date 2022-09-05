@@ -15,7 +15,7 @@ comp_vcs:
 	-f ${filelist}
 
 run_vcs:
-	./testbench.sv \
+	../testbench/tb.sv \
 	-l sim.log 
 
 run_verdi:

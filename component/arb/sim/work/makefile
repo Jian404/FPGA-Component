@@ -14,7 +14,7 @@ comp_vcs:
 	${ALL_DEFINE} \
 	${NOVAS_HOME}/share/PLI/VCS/LINUX64/novas.tab \
 	${NOVAS_HOME}/share/PLI/VCS/LINUX64/pli.a \
-	-f ${filelist}
+	-f ../filelist/filelist.f
 
 run_vcs:
 	../testbench/tb.sv \
@@ -24,7 +24,7 @@ run_verdi:
 	verdi \
 	-sv \
 	${ALL_DEFINE} \
-	-f ${filelist} \
+	-f ../filelist/filelist.f \
 	-ssf ./tst.fsdb
 
 all:

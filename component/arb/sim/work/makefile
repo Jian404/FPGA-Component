@@ -10,11 +10,11 @@ comp_vcs:
 	+v2k \
 	-sverilog \
 	-debug_all \
-	-l comp.log \
 	${ALL_DEFINE} \
 	${NOVAS_HOME}/share/PLI/VCS/LINUX64/novas.tab \
 	${NOVAS_HOME}/share/PLI/VCS/LINUX64/pli.a \
-	-f ../filelist/filelist.f
+	-f ../filelist/filelist.f \
+	-l comp.log
 
 run_vcs:
 	../testbench/tb.sv \

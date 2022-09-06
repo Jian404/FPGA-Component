@@ -27,5 +27,4 @@ run_verdi:
 	-f ../filelist/filelist.f \
 	-ssf ./tst.fsdb
 
-all:
-	comp_vcs run_vcs run_verdi
+all:comp_vcs run_vcs run_verdi

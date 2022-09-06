@@ -12,6 +12,8 @@ comp_vcs:
 	-debug_all \
 	-l comp.log \
 	${ALL_DEFINE} \
+	${NOVAS_HOME}/share/PLI/VCS/LINUX64/novas.tab \
+	${NOVAS_HOME}/share/PLI/VCS/LINUX64/pli.a \
 	-f ${filelist}
 
 run_vcs:

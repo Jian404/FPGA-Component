@@ -46,11 +46,11 @@ always_ff@(posedge clockIn_b)begin
 end
 
 assign dataOut_b = ramDataRegOut_b;
-
+/*
 initial begin
     for(int i = 0; i < MEM_SIZE; i = i + 1)begin
         ramData[i] = {DATA_WIDTH{1'b0}};
     end
 end
-
+*/
 endmodule

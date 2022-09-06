@@ -1,3 +1,4 @@
+`timescale 1ps/1ps
 module tst;
 logic           clock_100m;
 logic           reset;

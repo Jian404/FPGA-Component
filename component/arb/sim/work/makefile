@@ -11,7 +11,7 @@ comp_vcs:
 	-sverilog \
 	-debug_all \
 	${ALL_DEFINE} \
-	${NOVAS_HOME}/share/PLI/VCS/LINUX64/novas.tab \
+	-P ${NOVAS_HOME}/share/PLI/VCS/LINUX64/novas.tab \
 	${NOVAS_HOME}/share/PLI/VCS/LINUX64/pli.a \
 	-f ../filelist/filelist.f \
 	-l comp.log
